@@ -1,6 +1,27 @@
 //
-//date.js スプライトデータとか
+//data.js スプライトデータとか
 //
+
+//敵マスター
+class TekiMaster
+{
+	constructor( tnum,r, hp,score )
+	{
+		this.tnum = tnum;
+		this.r    = r;
+		this.hp   = hp;
+		this.score= score;
+	}
+}
+
+let tekiMaster=
+[
+	new TekiMaster( 0, 10,    1,  100),		//0,ピンクひよこ
+	new TekiMaster( 1, 10,    1,  100),		//1,黄色ひよこ
+	new TekiMaster( 2, 70, 5000,10000),		//2,ボスひよこ(黄色)
+	new TekiMaster( 3, 10,    1,   10),		//3,ボスひよこ(黄色)の子供
+]
+
 
 //スプライトクラス
 class Sprite
